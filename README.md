@@ -36,8 +36,19 @@ Each dataset is provided as a CSV file, compressed to approximately 2 GB in tota
 
 ## Usage Example
 
-The `notebooks/` folder contains practical examples to explore the TuxKConfig dataset:
-- **`tuxkconfig.ipynb`**: A Jupyter notebook showcasing how to fetch and analyze the TuxKConfig dataset from OpenML. It includes all code examples, tables, and graphs presented in the datapaper.
+## Notebooks
+
+1. **[Performance Prediction Notebook](notebooks/performance_prediction.ipynb)**  
+   - **Purpose**: This notebook uses machine learning techniques to predict the performance (e.g., build time or binary size) of Linux kernel configurations based on historical data. It leverages models trained on configuration features to assist in optimizing kernel builds.
+
+2. **[Build Failure Analysis Notebook](notebooks/build_failure_analysis.ipynb)**  
+   - **Purpose**: This notebook analyzes common causes of build failures in Linux kernel configurations. It processes logs and configuration data to identify patterns and suggest potential fixes.
+
+3. **[Configuration Space Exploration Notebook](notebooks/config_space_exploration.ipynb)**  
+   - **Purpose**: This notebook explores the vast configuration space of the Linux kernel, visualizing the relationships between configuration options and their impact on system properties like size or resource usage.
+
+4. **[Feature Importance Analysis Notebook](notebooks/feature_importance_analysis.ipynb)**  
+   - **Purpose**: This notebook evaluates the importance of individual configuration features (e.g., specific kernel options) in determining outcomes such as binary size or build success, using statistical and ML-based methods.
 
 To run the notebook:
 1. Clone this repository: `git clone https://github.com/username/tuxkconfig.git`
